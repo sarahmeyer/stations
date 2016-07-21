@@ -1,0 +1,74 @@
+.stations {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.stations__title {
+  color: #39A2E1;
+
+}
+
+.stations__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 0;
+  background-color: white;
+  color: red;
+}
+
+.stations__form {
+  margin-bottom: 10px;
+}
+
+.stations__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stations__list-item {
+  background-color: #052B6C;
+  display: inline-block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  vertical-align: top;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .stations__list-item {
+    width: 48%;
+  }
+
+  .stations__list-item:nth-child(2n) {
+    margin-left: 1%;
+  }
+
+  .stations__list-item:nth-child(2n+1) {
+    margin-right: 1%;
+  }
+}
+
+.stations__list-item__details {
+  color: white;
+  padding: 20px;
+}
+
+.stations__list-item__summary {
+  text-transform: uppercase;
+}
+
+.stations__list-item__summary::-webkit-details-marker {
+  display: none;
+}
+
+.stations__list-item__summary:after {
+  content: "+";
+  margin-left: 10px;
+}
